@@ -69,7 +69,7 @@ def get_gzh_history_url(article_url):
         return None
 
 if __name__ == "__main__":
-    test_url = "https://mp.weixin.qq.com/s/XhSxQYT1raG_-pdYpaWWtw"
+    test_url = "dddddddddd"
     history_link = get_gzh_history_url(test_url)
     
     if history_link:
