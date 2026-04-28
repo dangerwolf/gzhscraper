@@ -84,7 +84,7 @@ def download_image(url, save_dir="downloaded_images", title="", date="", index=0
             clean_title = re.sub(r'[^\w\s-]', '', title).strip()
             clean_title = re.sub(r'[\s]+', '_', clean_title)
             timestamp = date.replace("-", "")
-            image_filename = f"{clean_title}_{timestamp}_{index}{ext}"
+            image_filename = f"{timestamp}_{clean_title}_{index}{ext}"
             filepath = os.path.join(save_dir_path, image_filename)
             
             with open(filepath, "wb") as f:
